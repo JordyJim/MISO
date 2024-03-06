@@ -13,7 +13,7 @@
 
 
 
-<body>
+<body class="container">
     <div id="PageJM" style="padding-top: 81px;">
 
         <!--Header-->
@@ -29,10 +29,10 @@
                <div class="nav-links">
                 <nav>
                     <ul class="d-flex">
-                        <li class="link-header"><a href="">Inicio</a></li>
-                        <li class="link-header"><a href="">Categorias</a></li>
-                        <li class="link-header"><a href="">Ofertas</a></li>
-                        <li class="link-header"><a href="">Contacto</a></li>
+                        <li class="link-header texto-animado"><a href="">Inicio</a></li>
+                        <li class="link-header texto-animado"><a href="">Categorias</a></li>
+                        <li class="link-header texto-animado"><a href="">Ofertas</a></li>
+                        <li class="link-header texto-animado"><a href="">Contacto</a></li>
                         <div class="social-head">
                             <a href=""><i class="ion-social-facebook"></i></a>
                             <a href=""><i class="ion-social-instagram"></i></a>
@@ -49,47 +49,69 @@
 
         <!--Portada-->
         <div class="portada">
-            <div class="fondo-1asadad">
+            <div class="fondo-1">
                 <img src="/src/img/fondo_2.png" alt="portada" class="img-fondo">
             </div>
-            <div class="header-texto">
-                <h2 class="no-margin text-start">Titulo</h2>
-                <div class="no-margin border-title"></div>
-                <p class="no-margin text-start description-title" style="margin-top: 20px;">
-                    Hola este es el parrafo de prueba para la descripcion de la pagina
-                </p>
-                <p class="no-margin text-start description-title">
-                    Segunda parte de la descripcion
-                </p>
 
-
-                <button class="animated-button">
-                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                    <span class="text">Consulta aqui!!</span>
-                    <span class="circle"></span>
-                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                  </button>
+            <div class="header-justify">
+                <div class="header-texto">
+                    <h2 class="no-margin text-start">Titulo</h2>
+                    <div class="no-margin border-title"></div>
+                    <p class="no-margin text-start description-title" style="margin-top: 20px;">
+                        Hola este es el parrafo de prueba para la descripcion de la pagina
+                    </p>
+                    <p class="no-margin text-start description-title">
+                        Segunda parte de la descripcion
+                    </p>
+    
+    
+                    <button class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                        <span class="text">Consulta aqui!!</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                      </button>
+                </div>
+                <div>
+                    <img src="/src/img/img1.jpg" class="img-portada">
+                </div>
+                
             </div>
-            
-            <img src="/src/img/img1.jpg" class="img-portada">
+           
         </div>
         
 
         <!--Categoria-->
         <section></section>
 
+
+
         <!--Ofertas del dia-->
         <main>
-            <h2 class="centrar-texto" style="margin-top: 30px;">Nuestros servicios</h2>
+            
+            <div class="margin-servicios">
+                <h2 class="centrar-texto" style="margin-top: 30px;">Nuestros servicios</h2>
+                <p class="centrar-texto no-margin text-start description-title" style="margin-top: 20px;">
+                    Hola este es el parrafo de prueba para la descripcion de la pagina
+                </p>
+                <p class="centrar-texto no-margin text-start description-title">
+                    Segunda parte de la descripcion
+                </p>
+            </div>
+
             <div class="bg-gray seccion-oferta">
+                <div class="fondo-2">
+                    <img src="/src/img/fondo_3.png" alt="portada" class="img-fondo2">
+                </div>
+                
                 <div class="oferta-ind">
                     <div>
                         <img class="img-producto" src="img/memoria-ram.jpg" alt="memoria">
@@ -112,8 +134,12 @@
                         <input type="submit" value="Agregar" class="boton-small boton--primario">
 
                     </div>
+                    
                 </div>
+                
+                
             </div>
+
         </main>
 
         <!--Datos de mensaje-->
