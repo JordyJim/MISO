@@ -1,0 +1,373 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*
+@media (min-width: 640px) { 
+    .portada{
+    }
+ }
+@media (min-width: 768px) { 
+    .portada{
+    }
+ }
+@media (min-width: 1024px) { 
+    .portada{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+ }
+*/
+*,
+*:before, 
+*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+#PageJM #headerpage.fixed-header{
+    background-color:transparent;
+
+    
+}
+#headerpage.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: height 0.3s;
+    background-color: rgba(255, 255, 255, .9);
+}
+#site-logo a{
+    text-decoration: none;
+    color: inherit;
+
+}
+#site-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.wrapper{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+}
+#site-logo{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.text-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.img-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.link-header{
+    margin: 0px 8px;
+}
+ul li.link-header a{
+    padding-bottom: 8px;
+    color: #ffffff;
+}
+ul li.link-header a:hover{
+    opacity: 0.5;
+    color: purple;
+}
+
+header{
+    height: 80px;
+}
+
+/* FOOTER */
+.footer-basic{
+    padding: 40px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+.footer-basic .social{
+    text-align: center;
+}
+.footer-basic .social > a{
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin: 0 8px;
+    opacity: 1;
+}
+.footer-basic .social > a:hover{
+    opacity: 0.5;
+
+}
+.footer-basic .copy{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+/* PORTADA */
+
+.portada{
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+    display: table;
+    background-position: left;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+
+}
+
+
+
+.img-portada{
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+    box-shadow: 0px 8px 15px #535353;
+    float: right; 
+    margin-top: 200px; 
+} 
+.portada .img-fondo{
+    z-index: -1000;
+    width: 100%;
+    max-width: 1024px;
+    position: absolute;
+    top: 0;
+
+}
+
+.header-texto{
+    text-align: center;
+    color: white;
+    height: 100%;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.link-header{
+    margin: 0px 8px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding-left: 25%;
+}
+
+ul .social-head{
+    float: right;
+    padding-left: 300px;
+
+}
+ul .social-head > a{
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+
+    color: #ffffff;
+    margin: 0 8px;
+    margin-top: -5px;
+    opacity: 1;
+}
+h2.no-margin{
+    font-size: 88px;
+}
+.border-title{
+    border-bottom: 4px solid #000000;
+    width: 28%;
+    
+}
+.description-title{
+    font-size: 18px;
+}
+
+/* OFERTAS DEL DIA */
+
+.bg-gray{
+    background-color: #000000;
+}
+.seccion-ofertas{
+    height: 350px;
+    padding: 15px 80px;
+    display: flex;
+    place-content: space-around;
+}
+.oferta-ind{
+    height: 300px;
+    background-color: #ffffff;
+    max-width: 15%;
+    border-radius: 16px;
+}
+
+.img-producto{
+    max-height: 200px;
+    width: -webkit-fill-available;
+    padding-top: 30px;
+}
+.txt-base-carousel-section--discount{
+    font-size: 12px;
+    color: #ffffff;
+    background-color: blue;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+.ml-1{
+    margin-left: 10px;
+}
+
+
+/* UTILIDADES */
+.no-margin{
+    margin: 0;
+}
+
+h2{
+    font-size: 4rem;
+}.text-start{
+    text-align: start;
+}
+.d-flex{
+    display: flex;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+
+
+.animated-button {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: rgb(250, 127, 209);
+    border-radius: 100px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(250, 127, 209);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: white;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: rgb(250, 127, 209);
+    border-radius: 12px;
+    background-color: white;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: rgb(250, 127, 209);
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(0, 0, 0);
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
