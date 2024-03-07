@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,128 +11,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Pagina MISO</title>
 </head>
-
-
-
 <body>
-    <div id="PageJM" style="padding-top: 81px;">
-
-        <!--Header-->
-        <div id="headerpage" class="fixed-header">
-        <header id="header">
-            <div class="wrapper">
-                <div id="site-logo">
-                    <a href="" title="logo">
-                        <h1 class="text-logo"><img src="img/logo2.png" class="img-logo" alt="logo">MISO MUJER</h1>
-                    </a>
-
+    
+    <div id="PageJM">
+        <div id="headerpage" style="background-image: url('./img/fondo_2.png'); background-repeat: no-repeat; background-size: cover;">
+            <header id="header" class="text-white p-5">
+                <div class="container mx-auto flex justify-between items-center">
+                    <div id="site-logo" class="flex items-center space-x-2">
+                        <img class="h-10 w-auto" src="img/logo2.png" alt="logo">
+                        <h1 class="text-3xl font-bold">MISO MUJER</h1>
+                    </div>
+                    <nav class="flex-grow text-lg lg:block hidden">
+                        <ul class="flex justify-center space-x-6">
+                            <li><a class="hover:text-gray-300 font-semibold" href="">Inicio</a></li>
+                            <li><a class="hover:text-gray-300 font-semibold" href="">Categorias</a></li>
+                            <li><a class="hover:text-gray-300 font-semibold" href="">Ofertas</a></li>
+                            <li><a class="hover:text-gray-300 font-semibold" href="">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <div class="flex space-x-6 lg:block hidden">
+                        <a href=""><i class="ion-social-facebook text-3xl"></i></a>
+                        <a href=""><i class="ion-social-instagram text-3xl"></i></a>
+                        <a href=""><i class="ion-social-whatsapp text-3xl"></i></a>
+                        <a href=""><i class="ion-social-snapchat text-3xl"></i></a>
+                    </div>
+                    <div class="lg:hidden block">
+                        <button id="menu-button" class="p-2 text-white font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                        </button>
+                    </div>
                 </div>
-               <div class="nav-links">
-                <nav>
-                    <ul class="d-flex">
-                        <li class="link-header"><a href="">Inicio</a></li>
-                        <li class="link-header"><a href="">Categorias</a></li>
-                        <li class="link-header"><a href="">Ofertas</a></li>
-                        <li class="link-header"><a href="">Contacto</a></li>
-                        <div class="social-head">
-                            <a href=""><i class="ion-social-facebook"></i></a>
-                            <a href=""><i class="ion-social-instagram"></i></a>
-                            <a href=""><i class="ion-social-whatsapp"></i></a>
-                            <a href=""><i class="ion-social-snapchat"></i></a>
-                        </div>
-                    </ul>
-
-                </nav>
-               </div>
+            </header>
+            <div id="sidebar" class="fixed right-0 top-0 h-full w-64 bg-white text-neutral-950 transform translate-x-full overflow-auto transition-transform duration-200 ease-in-out lg:hidden block shadow-lg">
+                <!-- Aquí va el contenido del sidebar -->
+                <ul class="flex flex-col items-center pt-10">
+                    <a class="bg-white w-full text-center hover:bg-pink-300 hover:text-white py-6" href=""><li class="">Inicio</li></a>
+                    <a class="bg-white w-full text-center hover:bg-pink-300 hover:text-white py-6" href=""><li class="">Categoria</li></a>
+                    <a class="bg-white w-full text-center hover:bg-pink-300 hover:text-white py-6" href=""><li class="">Ofertas</li></a>
+                    <a class="bg-white w-full text-center hover:bg-pink-300 hover:text-white py-6" href=""><li class="">Contacto</li></a>
+                </ul>
+                <button id="close-button" class="p-2 text-black absolute top-0 left-0 hover:bg-gray-200 transition-colors duration-200 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </button>
             </div>
-        </header>
-        </div>
-
-        <!--Portada-->
-        <div class="portada">
-            <div class="fondo-1asadad">
-                <img src="/src/img/fondo_2.png" alt="portada" class="img-fondo">
-            </div>
-            <div class="header-texto">
-                <h2 class="no-margin text-start">Titulo</h2>
-                <div class="no-margin border-title"></div>
-                <p class="no-margin text-start description-title" style="margin-top: 20px;">
-                    Hola este es el parrafo de prueba para la descripcion de la pagina
-                </p>
-                <p class="no-margin text-start description-title">
-                    Segunda parte de la descripcion
-                </p>
-
-
-                <button class="animated-button">
-                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                    <span class="text">Consulta aqui!!</span>
-                    <span class="circle"></span>
-                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                  </button>
-            </div>
-            
-            <img src="/src/img/img1.jpg" class="img-portada">
-        </div>
-        
-
-        <!--Categoria-->
-        <section></section>
-
-        <!--Ofertas del dia-->
-        <main>
-            <h2 class="centrar-texto" style="margin-top: 30px;">Nuestros servicios</h2>
-            <div class="bg-gray seccion-oferta">
-                <div class="oferta-ind">
+            <div class="flex flex-col sm:flex-col-reverse md:flex-row px-5 lg:px-36 sm:px-10 pt-0 sm:pt-10 lg:pt-20 pb-10">
+                <div class="izquierda flex-1 mx-5 order-1 sm:order-2 md:order-1">
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white">LANDING PAGE WEBSITE DESIGN TEMPLATÉ</h2>
+                    <div></div>
+                    <p class="text-sm sm:text-base md:text-lg mb-2 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl neque, molestie vel varius et, rhoncus non turpis.</p>
+                    <p class="text-sm sm:text-base md:text-lg mb-4 text-white">Segunda parte de la descripcion</p>
+                    <button class="flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded">
+                        <svg class="h-6 w-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text-sm sm:text-base md:text-lg">Consulta aqui!!</span>
+                        <span></span>
+                        <svg class="h-6 w-6 ml-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="derecha flex-1 order-2 sm:order-1 md:order-2">
                     <div>
-                        <img class="img-producto" src="img/memoria-ram.jpg" alt="memoria">
-                    </div>
-                    <div>
-                        <span class="txt-base-carousel-section--discount ml-1">-10%<span>
-                    </div>
-                    <div>
-                        <span class="txt-base-carousel-section--discount ml-1">Producto de Temporada</span>
-                    </div>
-                    <div>
-                        <span>Memoria Ram</span>
-                    </div>
-                    <div>
-                        <div id="txt-base-carousel-section-price ml-2"> S/ 100.00
-                            <label class="txt-base-carousel-section-price txt-base-carousel-section-price--dscto">S/150.00</label>
-                        </div>
-                    </div>
-                    <div class="float-right mr-2 mt-5">
-                        <input type="submit" value="Agregar" class="boton-small boton--primario">
-
+                        <img class="w-full h-auto" src="/src/img/img1.jpg">
                     </div>
                 </div>
             </div>
-        </main>
-
-        <!--Datos de mensaje-->
-        <section></section>
-
-        <!--Footer-->
-        <div id="footerPage" class="footer-basic">
-            <footer>
-                <div class="social">
-                    <a href=""><i class="ion-social-facebook"></i></a>
-                    <a href=""><i class="ion-social-instagram"></i></a>
-                    <a href=""><i class="ion-social-whatsapp"></i></a>
-                    <a href=""><i class="ion-social-snapchat"></i></a>
-                </div>
-                <p class="copy">Derechos Reservados a Jim © 2024</p>
-            </footer>
+        <div>
+            <h1></h1>
         </div>
-        
+        </div>
     </div>
 </body>
 </html>
+<script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+        document.getElementById('sidebar').style.transform = 'translateX(0)';
+    });
+    document.getElementById('close-button').addEventListener('click', function() {
+    document.getElementById('sidebar').style.transform = 'translateX(100%)';
+    });
+</script>
