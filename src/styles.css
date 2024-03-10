@@ -49,8 +49,6 @@ body{
 #PageJM #headerpage.fixed-header{
     background-color:rgba(0, 0, 0, .1);
     backdrop-filter: blur(20px);
-
-    
 }
 #headerpage.fixed-header{
     position: fixed;
