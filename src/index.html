@@ -47,42 +47,64 @@
         <div id="headerpage" class="fixed-header">
             <header id="header">
                 <div class="wrapper">
-                <div class="justify-header">
-                    <div id="site-logo">
-                        <a href="" title="logo">
-                            <h1 class="text-logo"><img src="img/logov2.png" class="img-logo" alt="logo">MISO MUJER</h1>
-                        </a>
-                    </div>
+                    <div class="justify-header">
+                        <div id="site-logo">
+                            <a href="" title="logo"><h1 class="text-logo"><img src="img/logov2.png" class="img-logo" alt="logo">MISO MUJER</h1></a>
+                        </div>
+                        <div class="nav-links">
+                            <nav>
+                                <ul class="d-flex">
+                                    <li class="link-header texto-animado"><a href="">Inicio</a></li>
+                                    <li class="link-header texto-animado"><a href="">Servicios</a></li>
+                                    <li class="link-header texto-animado"><a href="">Metodos</a></li>
+                                    <li class="link-header texto-animado"><a href="">Nosotros</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="social-head">
+                            <a href="https://www.instagram.com/apoyando_mujeres_miso?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=51960166549&text=Buen%20d%C3%ADa,%20quisiera%20informaci%C3%B3n%20sobre%20los%20m%C3%A9todos,%20precios%20y%20soluciones%20ofrecidos%20en%20MISO%20PERU"><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+                        
 
 
-                    <div class="nav-links">
-                        <nav>
-                            <ul class="d-flex">
-                                <li class="link-header texto-animado"><a href="">Inicio</a></li>
-                                <li class="link-header texto-animado"><a href="">Servicios</a></li>
-                                <li class="link-header texto-animado"><a href="">Metodos</a></li>
-                                <li class="link-header texto-animado"><a href="">Nosotros</a></li>
-                                
-                            </ul>
-                        </nav>
+                        <div class="social-head-2">
+                            <a><i><span class="material-symbols-outlined" onclick="toggleMenu()">menu</span></i></a>
+                        </div>
+
+                        <div class="nav-links-2" id="menuList">
+                            <nav class="class-background">
+                                <ul class="d-flex" >
+                                    <li class="link-header texto-animado"><a href="">Inicio</a></li>
+                                    <li class="link-header texto-animado"><a href="">Servicios</a></li>
+                                    <li class="link-header texto-animado"><a href="">Metodos</a></li>
+                                    <li class="link-header texto-animado"><a href="">Nosotros</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <script>
+                            
+                            let menuList = document.getElementById("menuList")
+                            menuList.style.maxHeight = "0px";
+                            function toggleMenu(){
+                                if(menuList.style.visibility == "hidden")
+                                {
+                                    menuList.style.display = "block";
+                                    menuList.style.visibility = "visible";
+                                    
+                                }
+                                else{
+                                    menuList.style.visibility = "hidden";
+                                }
+                            }
+                            </script>
                     </div>
 
                     
-                    <div class="social-head">
-                        <a href=""><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=51960166549&text=Buen%20d%C3%ADa,%20quisiera%20informaci%C3%B3n%20sobre%20los%20m%C3%A9todos,%20precios%20y%20soluciones%20ofrecidos%20en%20MISO%20PERU"><i class='bx bxl-whatsapp'></i></a>
-        
-                    </div>
-                    <div class="social-head-2">
-                        <a href=""><span class="material-symbols-outlined">menu</span></a>
-                        
-                    </div>
-                </div>
 
                 
-            </div>
-            <div/>
-        </header>
+                </div>
+            </header>
         </div>
         
 
@@ -478,7 +500,7 @@
             <footer>
                 <div class="social">
                     
-                    <a href=""><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+                    <a href="https://www.instagram.com/apoyando_mujeres_miso?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
                     <a href="https://api.whatsapp.com/send?phone=51960166549&text=Buen%20d%C3%ADa,%20quisiera%20informaci%C3%B3n%20sobre%20los%20m%C3%A9todos,%20precios%20y%20soluciones%20ofrecidos%20en%20MISO%20PERU"><i class='bx bxl-whatsapp'></i></a>
         
                 </div>

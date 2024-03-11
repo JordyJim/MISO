@@ -866,7 +866,9 @@ h2{
 .social-head-2{
   display: none;
 }
-
+.nav-links-2{
+  display: none;
+}
 
 
 
@@ -875,8 +877,7 @@ h2{
 
 
   /*RESPONSIVE*/
-
-  @media (max-width: 390px) { 
+  @media (max-width: 790px) { 
     /*NAVEGACION*/
     .social-head, .nav-links{
       display: none;
@@ -898,12 +899,38 @@ h2{
       margin-top: 30px;
       display: block;
   }
-  .nav-links-2{
-    justify-content: space-around;
-    display: flex;
-    margin-top: 100px;
-    }
 
+  .nav-links-2{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    
+    
+
+    }
+    .class-background{
+      background: rgb(224, 30, 111);
+      border-radius: 30px;
+      
+    }
+    
+    .d-flex{
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+    .nav-links-2 a{
+      display: block;
+      }
+
+    
+  }
+
+
+  @media (max-width: 390px) { 
+ 
 
 
     /*HEADER*/
