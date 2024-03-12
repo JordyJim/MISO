@@ -39,12 +39,12 @@
 
 <body class="container">
     
-    <div id="PageJM" style="padding-top: 81px;">
+    <div id="PageJM" style="padding-top: 81px;" >
 
 
 
         <!--Header-->
-        <div id="headerpage" class="fixed-header">
+        <div id="headerpage" class="fixed-header" >
             <header id="header">
                 <div class="wrapper">
                     <div class="justify-header">
@@ -71,41 +71,37 @@
                         <div class="social-head-2">
                             <a><i><span class="material-symbols-outlined" onclick="toggleMenu()">menu</span></i></a>
                         </div>
-
-                        <div class="nav-links-2" id="menuList">
-                            <nav class="class-background">
-                                <ul class="d-flex" >
-                                    <li class="link-header texto-animado"><a href="">Inicio</a></li>
-                                    <li class="link-header texto-animado"><a href="">Servicios</a></li>
-                                    <li class="link-header texto-animado"><a href="">Metodos</a></li>
-                                    <li class="link-header texto-animado"><a href="">Nosotros</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <script>
-                            
-                            let menuList = document.getElementById("menuList")
-                            menuList.style.maxHeight = "0px";
-                            function toggleMenu(){
-                                if(menuList.style.visibility == "hidden")
-                                {
-                                    menuList.style.display = "block";
-                                    menuList.style.visibility = "visible";
-                                    
-                                }
-                                else{
-                                    menuList.style.visibility = "hidden";
-                                }
-                            }
-                            </script>
                     </div>
-
-                    
-
-                
                 </div>
             </header>
         </div>
+
+
+        <div class="nav-links-2" id="menuList">
+            <nav class="class-background">
+                <ul class="d-flex" >
+                    <li class="link-header texto-animado"><a href="">Inicio</a></li>
+                    <li class="link-header texto-animado"><a href="">Servicios</a></li>
+                    <li class="link-header texto-animado"><a href="">Metodos</a></li>
+                    <li class="link-header texto-animado"><a href="">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            
+            let menuList = document.getElementById("menuList")
+            function toggleMenu(){
+                if(menuList.style.visibility == "hidden")
+                {
+                    
+                    menuList.style.visibility = "visible";
+                    
+                }
+                else{
+                    menuList.style.visibility = "hidden";
+                }
+            }
+        </script>
         
 
 
