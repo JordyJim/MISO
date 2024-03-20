@@ -184,12 +184,11 @@ margin-bottom: 190px;
 } 
 .img-fondo{
     z-index: -1;
-    width: auto;
-    height: auto;
-    max-height: 1080px;
-    max-width: 1860px;
+    width: 100%;
+    height: 1046px;
     position: absolute;
     top: 0;
+    background-attachment: fixed;
 }
 /*
 .portada .img-fondo{
@@ -304,12 +303,12 @@ h2.no-margin{
 
 .img-fondo2{
     z-index: -1;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 1046px;
     max-height: 1080px;
-    max-width: 1860px;
     position: absolute;
     margin-top: 0;
+    background-attachment: fixed;
 }
 
 
@@ -916,6 +915,7 @@ h2{
     left: 0;
     width: 100%;
     height: 190px;
+    visibility: hidden;
     
     
 
@@ -976,7 +976,7 @@ h2{
       width: 100%;
     }
     .img-portada-1{
-      width: 300px;
+      width: 90%;
       height: auto;
       border-radius: 15px 15px 50px;
       box-shadow: 0px 8px 15px #535353;
@@ -986,7 +986,8 @@ h2{
     .btn-header{
       margin-top: 20px;
       margin-bottom: 15px;
-      margin-left: 60px;
+      width: 195px;
+      margin: 0 auto;
     }
     .img-fondo{
       z-index: -1;
@@ -1014,6 +1015,12 @@ h2{
   .description-title{
     font-size: 14px;
   }
+
+
+  .portada{
+    margin-bottom: 0px;
+    margin-top: 100px;
+    }
 
   /*SERVICIOS*/
   .margin-servicios{
