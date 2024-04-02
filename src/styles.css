@@ -945,9 +945,11 @@ h2{
   }
 
 
+/*
+@media (max-width: 390px)
+*/
 
-
-  @media (max-width: 390px) { 
+  @media (max-width: 790px) { 
     /*HEADER*/
     .img-portada{
  
@@ -1081,6 +1083,7 @@ main .oferta-justify-1{
 }
 .margin-just-2{
   padding-top: 50px;
+  
 }
 
 /*Metodos*/
@@ -1088,14 +1091,17 @@ main .oferta-justify-1{
   display: none;
 }  
 .metodo-2{
-  display:block;
+  
+  display: block;
+  
 }
+
 .card {
   position: relative;
   margin-left: 5px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 200px;
   width: 380px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -1107,6 +1113,7 @@ main .oferta-justify-1{
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   margin-top: 50px;
 }
+
 .img-metodo-1{
   display: flex;
   margin-left: 140px;
